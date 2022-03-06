@@ -21,4 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
+* Only members can see who the author of a post
+
 * ...
