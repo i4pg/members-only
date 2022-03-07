@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
+    <%= favicon_link_tag asset_path('user-secret-solid') %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body class="content">
     <% if flash[:notice] %>
       <div class="notification is-primary">
         <p class="notice"><%= notice %></p>
       </div>
     <% end %>
-
     <% if flash[:alert] %>
       <div class="notification is-danger">
         <p class="alert"><%= alert %></p>

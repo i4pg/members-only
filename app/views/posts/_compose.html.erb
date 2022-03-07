@@ -1,0 +1,11 @@
+<div class="column">
+  <article class="media box">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <%= gravatar_image_tag(current_member.email, size: 64, alt: current_member.name) %>
+      </p>
+    </figure>
+    <div class="media-content">
+      <%= render 'form' %>
+    </div>
+  </article>

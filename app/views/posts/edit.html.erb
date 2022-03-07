@@ -1,17 +1,17 @@
 <div class="section">
-	<div class="container">
-		<div class="columns is-centered">
-			<div class="column is-half">
-				<h1 class="title">Edit your post</h1>
-          <div class="field">
-					<%= render 'form', post: @post %>
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h1 class="title">Edit your post</h1>
+        <div class="field">
+          <%= render 'form', post: @post %>
         </div>
-          <div class="field">
-				<p class="control">
-					<%= link_to 'Cancel', posts_path, class: "button" %>
-				</p>
+        <div class="field">
+          <p class="control">
+            <%= link_to 'Cancel', posts_path, class: "button" %>
+          </p>
         </div>
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </div>

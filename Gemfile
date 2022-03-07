@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -91,6 +93,14 @@ group :development do
 
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  gem 'rubocop', '~> 1.25', require: false
+  gem 'rubocop-rails', require: false
+
+  # Guard::RuboCop automatically checks Ruby code style with RuboCop when files are modified.
+  gem 'guard-rubocop', '~> 1.5'
+  gem 'prettier'
+  gem 'htmlbeautifier'
 end
 
 group :test do
